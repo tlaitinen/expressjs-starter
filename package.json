@@ -1,0 +1,40 @@
+{
+  "name": "expressjs-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node ./bin/www",
+    "lint": "eslint **/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tlaitinen/expressjs-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/tlaitinen/expressjs-starter",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-encrypter": "^0.2.3",
+    "cookie-parser": "^1.4.3",
+    "crypto": "0.0.3",
+    "debug": "^2.5.2",
+    "express": "^4.14.0",
+    "helmet": "^3.2.0",
+    "jed": "^1.1.1",
+    "js-yaml": "^3.7.0",
+    "lodash": "^4.17.4",
+    "moment": "^2.17.1",
+    "morgan": "^1.7.0",
+    "mustache": "^2.3.0",
+    "mustache-express": "^1.2.4",
+    "pg-promise": "^5.5.0",
+    "schemation": "^0.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "jest": "^18.0.0"
+  }
+}
