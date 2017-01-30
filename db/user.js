@@ -1,13 +1,13 @@
 let db       = require('./db');
-let sql      = require('./sql')('user');
+let sql      = require('./sql').user;
 let password = require('./password');
 let helpers  = require('./helpers');
 module.exports = {
   getById: (authId, userId) => {
-    return helpers.json(db.one(sql('get-by-id'), {id: userId, authId}));
+    return helpers.json(db.one(sql.getById, {id: userId, authId}));
   },
   login: (userName, pwd) => {
-    return db.one(sql('get-password'), {userName})
+    return db.one(sql.getPassword, {userName})
       .then(u => {
         if (password.verify(u.password, pwd) === true) {
           return u.id;
