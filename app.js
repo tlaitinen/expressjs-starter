@@ -14,9 +14,10 @@ let auth         = require('./routes/auth');
 
 let app = express();
 let cfg = require('./app-config');
+let db = require('./db/db');
 let migrate = require('./db/migrate');
 
-migrate();
+migrate(db);
 app.disable('etag');
 app.set('trust proxy', 1);
 let helmet = require('helmet');
